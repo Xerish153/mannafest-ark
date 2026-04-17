@@ -1,0 +1,191 @@
+{
+  "_meta": {
+    "version": "v1",
+    "generated": "2026-04-16",
+    "purpose": "Style/depth exemplars for apocrypha_works and apocrypha_connections. Bulk fill prompt 4A pattern-matches against these.",
+    "target_project": "ufrmssiqjtqfywthgpte",
+    "schema_version": "create_apocrypha_tables migration"
+  },
+  "works": [
+    {
+      "slug": "1-maccabees",
+      "title": "1 Maccabees",
+      "alternative_titles": ["First Book of the Maccabees", "Liber Primus Maccabaeorum"],
+      "category": "deuterocanonical",
+      "composition_period": "c. 134-104 BCE",
+      "language_original": "Hebrew",
+      "summary": "1 Maccabees is a sober, chronicle-style history of the Jewish revolt against the Seleucid empire from roughly 175 to 134 BCE. It opens with Antiochus IV Epiphanes' desecration of the Jerusalem temple in 167 BCE, traces the rise of the priest Mattathias and his five sons, and follows the military and political triumphs of Judas Maccabeus, Jonathan, and Simon as they win Judean independence and establish the Hasmonean dynasty.\n\nThe author writes in the manner of the Old Testament historical books — clearly modeling his prose on Samuel, Kings, and Chronicles — and presents the Maccabean cause as a continuation of Israel's covenant struggle. There are no overt miracles, no apocalyptic visions, and no explicit statements of resurrection hope. The theology is restrained and the politics are foregrounded. This makes 1 Maccabees a uniquely valuable historical source for the period and a striking literary contrast to its companion volume, 2 Maccabees.\n\nThe book closes with the high priesthood and civil leadership of Simon being formalized in 140 BCE, and his assassination by his son-in-law Ptolemy in 134 BCE. The narrative ends with John Hyrcanus succeeding to power, deliberately echoing the closing formula of the books of Kings.",
+      "historical_context": "The crisis of 167 BCE — Antiochus IV's prohibition of Torah observance, his erection of the 'abomination of desolation' on the temple altar, and the forced sacrifice of unclean animals — was the most severe assault on Jewish religious life since the Babylonian exile. Jewish responses ranged from accommodation (the Hellenizing high priestly faction of Jason and Menelaus) to passive martyrdom (the elder Eleazar and the seven brothers in 2 Maccabees) to armed revolt (the Maccabees). The book preserves the founding memory of what would become Hanukkah — the rededication of the temple in 164 BCE.",
+      "intertestamental_significance": "1 Maccabees fills the historical gap between Malachi and Matthew with concrete political narrative. It documents the institution of the Hasmonean priest-kingship — a fusion of religious and political authority that would set the stage for the corrupted high priesthood Jesus encountered. The book also explains why the temple existed in its renovated form during Jesus' ministry, why the festival of Hanukkah (referenced in John 10:22) was observed, and why first-century Jewish national hopes oscillated between militant messianism and quietist piety.",
+      "canon_status": {
+        "catholic": "canonical (deuterocanonical)",
+        "eastern_orthodox": "canonical (anagignoskomena)",
+        "oriental_orthodox": "canonical",
+        "anglican": "apocryphal — read for example of life and instruction of manners, not used to establish doctrine",
+        "protestant": "non-canonical, useful for historical context",
+        "jewish": "not in Tanakh, but historically important; preserved in Greek and used by Josephus"
+      },
+      "key_themes": ["zeal for Torah", "armed resistance to pagan oppression", "covenant fidelity", "temple desecration and rededication", "the Hasmonean priest-kingship"],
+      "major_figures": ["Antiochus IV Epiphanes", "Mattathias", "Judas Maccabeus", "Jonathan Apphus", "Simon Thassi", "John Hyrcanus", "Eleazar Avaran"],
+      "related_canonical_books": ["Daniel (chapters 7-12 prophesy this period)", "John (10:22 references Hanukkah)", "Hebrews (11:34-38 likely alludes to Maccabean martyrs)"],
+      "scholarly_notes": "The vast majority of scholars date 1 Maccabees to the late second century BCE, after Simon's death (134 BCE) but before Roman intervention in 63 BCE. Origen testified that the Hebrew title was Sarbeth Sarbanai (or similar) — meaning roughly 'The Book of the House of the Princes of God' — though no Hebrew manuscript survives; we possess the work only in the Greek Septuagint translation. The author's pro-Hasmonean stance is unmistakable, but his factual restraint and lack of supernatural embellishment have led most historians (Bickerman, Goldstein, Hengel, Schürer-Vermes-Millar) to treat it as a generally reliable source for the period it covers, especially when corroborated by Josephus."
+    },
+    {
+      "slug": "sirach",
+      "title": "Sirach",
+      "alternative_titles": ["Ecclesiasticus", "The Wisdom of Jesus son of Sirach", "Ben Sira"],
+      "category": "deuterocanonical",
+      "composition_period": "c. 196-175 BCE (Hebrew); Greek translation by grandson c. 132 BCE",
+      "language_original": "Hebrew",
+      "summary": "Sirach is the longest and most ambitious wisdom book of the Second Temple period — a 51-chapter collection of practical proverbs, theological reflections, hymns, and a closing 'Praise of the Fathers' that traces faithful figures from Enoch to the high priest Simon II. Its author, Jeshua ben Eleazar ben Sira, was a Jerusalem sage and scribe whose grandson translated the work into Greek in Egypt, providing one of the most important prefaces in the entire biblical corpus — including the earliest reference to a tripartite Jewish canon ('the Law and the Prophets and the other books of our ancestors').\n\nThe book stands in the tradition of Proverbs and Job but extends the wisdom genre by explicitly identifying personified Wisdom (Greek: Sophia) with the Torah given at Sinai (Sirach 24). This identification — Wisdom dwelling in Jacob, taking root in Israel, embodied in 'the book of the covenant of the Most High God' — became foundational for both later Jewish thought and the Christological readings of John 1.\n\nSirach is intensely practical: it counsels on friendship, parenting, marriage, table manners, business dealings, the treatment of servants and the poor, the value of physicians, the dangers of pride, the discipline of children, and the conduct of life in old age. It is also intensely theological, weaving these counsels into a vision of a God who is just, merciful, and providentially active in Israel's history.",
+      "historical_context": "Ben Sira wrote in Jerusalem during the early second century BCE, before the Maccabean crisis but after extensive Hellenistic influence had reached Judea. He served, taught, and likely ran a school for young men of means (Sirach 51:23: 'Draw near to me, you who are uneducated, and lodge in the house of instruction'). His worldview is conservative, Torah-centered, priestly in sympathy, and quietly resistant to Hellenizing pressures. The grandson's Greek translation, made in Alexandria around 132 BCE, was intended to serve the diaspora community for whom Hebrew was no longer accessible.",
+      "intertestamental_significance": "Sirach is a goldmine for understanding the Judaism Jesus inherited. Its identification of Wisdom with Torah anticipates John's identification of the Logos with Jesus (John 1:14). Its emphasis on the dignity of physicians (38:1-15) shaped Jewish and later Christian medical ethics. Its hymn to creation (42:15-43:33) parallels themes Jesus would echo. And its 'Praise of the Fathers' (44-50) provides the literary template for Hebrews 11. New Testament authors do not quote Sirach directly with attribution, but verbal and conceptual echoes are widespread (e.g., James 1:19's 'quick to hear, slow to speak' echoes Sirach 5:11; Matthew 11:28-30's yoke imagery echoes Sirach 51:23-27).",
+      "canon_status": {
+        "catholic": "canonical (deuterocanonical)",
+        "eastern_orthodox": "canonical (anagignoskomena)",
+        "oriental_orthodox": "canonical",
+        "anglican": "apocryphal — read for example of life and instruction of manners",
+        "protestant": "non-canonical; widely respected as edifying literature, often included in Reformation-era Bibles as an appendix",
+        "jewish": "not canonical, but quoted approvingly by rabbis (with the formula 'as it is written in the book of Ben Sira') in the Talmud and recovered Hebrew fragments at Cairo Geniza, Masada, and Qumran indicate it was read seriously well into late antiquity"
+      },
+      "key_themes": ["wisdom as Torah", "fear of the Lord as the beginning of wisdom", "practical ethics of daily life", "honor of parents", "use and limits of wealth", "discipline and learning", "praise of faithful ancestors"],
+      "major_figures": ["Wisdom (personified)", "the high priest Simon II (50:1-21, contemporaneous with the author)", "Adam, Enoch, Noah, Abraham, Isaac, Jacob, Moses, Aaron, Phinehas, Joshua, Caleb, the Judges, Samuel, Nathan, David, Solomon, Elijah, Elisha, Hezekiah, Isaiah, Josiah, Jeremiah, Ezekiel, the Twelve, Zerubbabel, Joshua son of Jozadak, Nehemiah (in Praise of the Fathers, ch 44-49)"],
+      "related_canonical_books": ["Proverbs", "Ecclesiastes", "Job", "Wisdom of Solomon", "John (Logos echoes)", "James (practical wisdom echoes)", "Hebrews (faith heroes parallel)"],
+      "scholarly_notes": "Hebrew fragments of Sirach were rediscovered in the Cairo Geniza in 1896-1900 (Schechter), at Masada in 1964 (Yadin), and at Qumran (2QSir, 11QPs-a 21:11-17 = Sirach 51:13ff). These finds confirmed the grandson's Greek translation as broadly faithful and revealed acrostic and poetic features lost in translation. Ben Sira's stance toward foreign rule is ambiguous; toward Hellenization, quietly resistant; toward the Zadokite priesthood, supportive. The book sits theologically between Proverbs and the Wisdom of Solomon — more developed than the former, more sober than the latter. Major commentators: Patrick W. Skehan and Alexander Di Lella (AB), Pancratius Beentjes, Benjamin Wright."
+    },
+    {
+      "slug": "tobit",
+      "title": "Tobit",
+      "alternative_titles": ["The Book of Tobit", "Tobias"],
+      "category": "deuterocanonical",
+      "composition_period": "c. 225-175 BCE",
+      "language_original": "Aramaic (with Hebrew variants; Aramaic and Hebrew fragments found at Qumran)",
+      "summary": "Tobit is a richly textured short novel telling parallel stories of two righteous Israelites in distress: Tobit, an exiled Naphtalite living in Nineveh who has been blinded, and Sarah, a young woman in Ecbatana whose seven successive husbands have each been killed on their wedding night by the demon Asmodeus. Through the secret intervention of the angel Raphael — disguised as a kinsman traveling companion named Azariah — Tobit's son Tobias is led to marry Sarah, defeat the demon, recover a long-deposited family inheritance, and return home to heal his father's blindness with the gall of a fish.\n\nThe book combines folk-tale elements (the helpful angel, the magical fish, the demon-binding ritual) with deeply observed Jewish piety: prayer, almsgiving, burial of the dead, sabbath observance, dietary care in exile, and reverence for marriage within the covenant community. It is a story about faithfulness in diaspora, about the providence of God working through ordinary means, and about the unseen ministry of angels.\n\nTobit's prayer of thanksgiving (chapter 13) and his deathbed prophecy of a glorious restored Jerusalem (chapter 14) are among the most beautiful eschatological hymns of the Second Temple period.",
+      "historical_context": "Set fictionally in the eighth-century BCE Assyrian exile, Tobit was almost certainly composed in the Hellenistic period (third or early second century BCE), most likely in the eastern diaspora — perhaps Babylonia or Media. Its detailed knowledge of geography is sometimes confused, suggesting the author was writing from memory or imagination rather than direct familiarity with Assyria. The discovery at Qumran of four Aramaic fragments and one Hebrew fragment (4Q196-200) in the late 1940s settled longstanding debate about the original language: it was Semitic, not Greek.",
+      "intertestamental_significance": "Tobit gives us a vivid window into the religious imagination of diaspora Judaism: the concrete forms of piety, the role of angels, the moral weight of acts like burying the dead, and the practical ethics of marriage and family life. The book's emphasis on almsgiving as deliverance from death (Tobit 4:10; 12:9) anticipates similar teachings in early rabbinic literature and is echoed in Acts 10:4 (Cornelius' alms 'have ascended as a memorial before God') and arguably in Luke 11:41. The angel Raphael's central role — one of the seven who 'stand in the presence of the Lord' (Tobit 12:15) — contributes to Second Temple angelology that surfaces in Revelation 8:2 and elsewhere.",
+      "canon_status": {
+        "catholic": "canonical (deuterocanonical)",
+        "eastern_orthodox": "canonical (anagignoskomena)",
+        "oriental_orthodox": "canonical",
+        "anglican": "apocryphal — read for example of life and instruction of manners",
+        "protestant": "non-canonical; Luther grouped it with the Apocrypha in his 1534 Bible as 'good and useful for reading'",
+        "jewish": "not canonical; never included in the Tanakh, but the Qumran finds show it was read by some Jewish communities"
+      },
+      "key_themes": ["providence in exile", "almsgiving and burial of the dead", "angelic ministry", "marriage within the covenant", "filial piety", "diaspora faithfulness"],
+      "major_figures": ["Tobit", "Tobias (his son)", "Anna (his wife)", "Sarah (Tobias' eventual wife)", "Raguel and Edna (Sarah's parents)", "the angel Raphael / Azariah", "the demon Asmodeus", "Ahikar (Tobit's nephew)"],
+      "related_canonical_books": ["Genesis (the search for a kinswoman wife parallels Isaac and Rebekah)", "Job (the righteous sufferer)", "Daniel (diaspora piety)", "Acts 10 (almsgiving as memorial)"],
+      "scholarly_notes": "The Qumran finds (4Q196-199 Aramaic, 4Q200 Hebrew) align more closely with the longer Greek recension (Sinaiticus, Old Latin) than with the shorter Vaticanus/Alexandrinus tradition, settling the textual question in favor of the longer text used by modern Catholic Bibles. The story's relationship to the Ahikar legend (referenced explicitly in 1:21-22; 14:10) places it within a wider Near Eastern wisdom tradition. Major commentators: Carey Moore (AB), Joseph Fitzmyer (Hermeneia)."
+    },
+    {
+      "slug": "1-enoch",
+      "title": "1 Enoch",
+      "alternative_titles": ["Ethiopic Enoch", "The Book of Enoch"],
+      "category": "pseudepigrapha",
+      "composition_period": "Composite work c. 300 BCE - 100 CE; oldest sections (Astronomical Book and Book of Watchers) likely third century BCE",
+      "language_original": "Aramaic (with possible Hebrew sections)",
+      "summary": "1 Enoch is not a single book but a composite library of five major works attributed to the antediluvian patriarch Enoch (Genesis 5:21-24). The five sections are: the Book of the Watchers (chapters 1-36), which expands Genesis 6:1-4 into a detailed account of the rebellion of two hundred angelic 'Watchers' who descended on Mount Hermon, took human wives, fathered the violent giants called Nephilim, and taught humanity forbidden arts (metalworking, sorcery, cosmetics, astrology); the Book of Parables or Similitudes (37-71), containing extended apocalyptic visions of judgment featuring the figure of 'the Son of Man' and 'the Elect One'; the Astronomical Book (72-82), an early treatise on calendars and celestial movement; the Book of Dream Visions (83-90), including the famous 'Animal Apocalypse' that allegorizes Israel's history through animals; and the Epistle of Enoch (91-108), containing the 'Apocalypse of Weeks' and ethical exhortations.\n\nThe book preserves enormously influential traditions about angelic rebellion, the origin of evil, eschatological judgment, the resurrection of the righteous, and a transcendent messianic figure. Although Jewish communities and Christian churches eventually moved away from canonizing it, 1 Enoch's fingerprints are everywhere in Second Temple Jewish thought and the New Testament.",
+      "historical_context": "The Book of the Watchers and the Astronomical Book are among the oldest Jewish apocalyptic writings, predating Daniel in their present form. The Animal Apocalypse appears to be written during or shortly after the Maccabean revolt (c. 165-160 BCE), making it a near-contemporary witness to those events. The Parables of Enoch are debated — some scholars place them in the first century BCE, others as late as the first century CE — and their treatment of 'the Son of Man' has profound implications for understanding Jesus' use of the title.",
+      "intertestamental_significance": "1 Enoch is the most important non-canonical book for understanding the New Testament's apocalyptic and angelological background. Jude 14-15 explicitly quotes 1 Enoch 1:9 as prophecy ('Enoch, the seventh from Adam, prophesied'). 2 Peter 2:4 and Jude 6 allude directly to the Watchers tradition. Multiple New Testament passages echo Enochic motifs: the Son of Man in Daniel 7 receives further development in 1 Enoch and reappears in Jesus' self-designation; the imagery of bound angels awaiting judgment (Revelation 20) draws from the Watchers myth; the heavenly Jerusalem and the throne of glory have Enochic precedent. The Ethiopian Orthodox Church preserved the complete book as canonical when most other communities lost it; Aramaic fragments at Qumran (4QEn-a through g, plus 4QEn-Astr) confirmed its antiquity and Semitic origin.",
+      "canon_status": {
+        "catholic": "non-canonical",
+        "eastern_orthodox": "non-canonical (with the exception of some Ethiopian and Eritrean traditions)",
+        "ethiopian_orthodox_tewahedo": "fully canonical",
+        "eritrean_orthodox_tewahedo": "fully canonical",
+        "anglican": "non-canonical",
+        "protestant": "non-canonical; widely studied for historical and theological background",
+        "jewish": "non-canonical; the Watchers tradition was actively suppressed in some rabbinic strands but preserved in others"
+      },
+      "key_themes": ["rebellion of the Watchers", "origin of evil", "eschatological judgment", "the Son of Man", "celestial calendar", "history as predetermined epochs", "vindication of the righteous"],
+      "major_figures": ["Enoch", "the Watchers (Semihazah, Azazel, others)", "the Nephilim", "the Son of Man / Elect One", "Michael, Gabriel, Raphael, Uriel"],
+      "related_canonical_books": ["Genesis 5-6", "Daniel 7", "Jude (direct quotation)", "2 Peter (Watchers allusion)", "Revelation (apocalyptic imagery)", "Matthew, Mark, Luke (Son of Man traditions)"],
+      "scholarly_notes": "Eleven Aramaic manuscripts of 1 Enoch were recovered from Qumran Cave 4 (4QEn-a through 4QEn-g, plus 4QEnastr-a through 4QEnastr-d), confirming the work's pre-Christian origin and Semitic original. Notably absent from the Qumran finds are any Aramaic fragments of the Parables of Enoch (chapters 37-71), which has fueled ongoing debate about whether the Parables are pre-Christian or originated in the late first century. Major scholars: George Nickelsburg and James VanderKam (Hermeneia commentary, the standard reference); E. Isaac (in Charlesworth's OT Pseudepigrapha); Daniel Olson; Kelley Coblentz Bautch."
+    },
+    {
+      "slug": "community-rule-1qs",
+      "title": "Community Rule (1QS)",
+      "alternative_titles": ["Rule of the Community", "Manual of Discipline", "Serek ha-Yahad"],
+      "category": "dead_sea_scrolls",
+      "composition_period": "c. 100-75 BCE (1QS); earlier and later recensions found in Cave 4",
+      "language_original": "Hebrew",
+      "summary": "The Community Rule is the foundational legal and theological document of the Qumran sect — almost certainly the Essene or proto-Essene community that lived at Khirbet Qumran from roughly the second century BCE until the Roman destruction of 68 CE. The version designated 1QS (Cave 1, Serek) is the most complete copy and contains the full constitution of the community: an entrance liturgy and covenant renewal ceremony, a stark theology of two spirits (truth and deceit) warring within humanity, detailed admission procedures for new members (a probationary period of two years before full participation in the communal meal and assembly), rules of communal property and discipline (with specific penalties for offenses ranging from interrupting another speaker to falling asleep in the assembly to slandering the community), and a closing hymn celebrating divine wisdom and the appointed times of judgment.\n\nUnlike the apocalyptic narratives or wisdom collections, 1QS is a working manual for a real community that ate communally, prayed at fixed hours, studied Torah continuously in shifts, and understood itself as the true remnant of Israel preparing for the imminent end of days.",
+      "historical_context": "The Qumran community separated from the Jerusalem temple establishment over disputes about priestly legitimacy (the 'Wicked Priest' versus the 'Teacher of Righteousness'), calendar (solar 364-day calendar versus lunisolar Jerusalem calendar), and ritual purity. They established a desert community by the Dead Sea where they could practice what they considered the true covenant in isolation, awaiting the arrival of two messiahs (priestly and royal) and an eschatological prophet. 1QS regulates that life in granular detail.",
+      "intertestamental_significance": "1QS provides our richest non-canonical window into a real first-century BCE Jewish movement that anticipated the kingdom of God, practiced communal property, performed ritual washings (echoing baptismal practice), expected an eschatological prophet (cf. Deuteronomy 18:15-18, applied to Jesus in Acts 3:22), and lived by a covenant-renewal ethic strikingly parallel in vocabulary to the Sermon on the Mount. The 'two spirits' theology (1QS III-IV) — light versus darkness, truth versus falsehood, the Prince of Light versus the Angel of Darkness — finds remarkable vocabulary parallels in the Gospel of John and the Pauline corpus, though scholars debate whether this represents direct influence, common Second Temple background, or independent development. The community's self-understanding as a 'plant of righteousness' echoes Isaiah 60-61 and parallels Pauline body-of-Christ ecclesiology in subtle ways.",
+      "canon_status": {
+        "catholic": "non-canonical",
+        "eastern_orthodox": "non-canonical",
+        "anglican": "non-canonical",
+        "protestant": "non-canonical",
+        "jewish": "non-canonical; sectarian document of a now-extinct community"
+      },
+      "key_themes": ["covenant renewal", "two spirits — truth and deceit", "communal discipline", "ritual purity", "eschatological expectation", "the desert as locus of preparation", "two messiahs (priestly and royal)"],
+      "major_figures": ["the Teacher of Righteousness (mentioned elsewhere in DSS)", "the Wicked Priest (mentioned elsewhere in DSS)", "the Maskil (instructor)", "the Prince of Light", "the Angel of Darkness"],
+      "related_canonical_books": ["Isaiah 40 (the desert-preparation theme)", "Deuteronomy (covenant framework)", "John (light/darkness vocabulary)", "1 John (truth/deceit dualism)", "Acts (communal property in the Jerusalem church)"],
+      "scholarly_notes": "1QS was among the original seven scrolls discovered in Cave 1 in 1947. Cave 4 yielded ten additional manuscripts (4QSa-j) showing significant textual development, indicating the Rule was a living document revised over generations. Major scholarly editions: Charlesworth (Princeton DSS Project); Knibb; Wernberg-Møller; Sarianna Metso (definitive textual study). The relationship between the Qumran community and John the Baptist remains debated but plausible — both operated in the same Judean wilderness, both practiced ritual washing, both expected imminent eschatological judgment. No direct evidence connects either John or Jesus to the community, but the religious vocabulary they inhabited overlaps significantly."
+    }
+  ],
+  "connections": [
+    {
+      "apocrypha_work_slug": "1-maccabees",
+      "apocrypha_reference": "1 Maccabees 4:36-59",
+      "canonical_reference": "John 10:22-23",
+      "connection_type": "historical_continuity",
+      "description": "1 Maccabees 4:36-59 records the rededication of the Jerusalem temple by Judas Maccabeus on 25 Kislev 164 BCE after its desecration by Antiochus IV. This event founded the eight-day festival John 10:22 calls 'the Feast of Dedication' (Hanukkah), during which Jesus walked in Solomon's portico and declared 'I and the Father are one.' Without 1 Maccabees the canonical Gospel reference is historically opaque.",
+      "scholarly_notes": "The festival is not commanded in the Torah; its institution by Judas (1 Macc 4:59) makes it a uniquely post-canonical Jewish holy day that nevertheless appears in the New Testament without explanation, presupposing the reader's knowledge.",
+      "confidence_level": "high"
+    },
+    {
+      "apocrypha_work_slug": "1-maccabees",
+      "apocrypha_reference": "1 Maccabees 1:54; 6:7",
+      "canonical_reference": "Matthew 24:15",
+      "connection_type": "thematic_parallel",
+      "description": "1 Maccabees describes the 'abomination of desolation' set up on the temple altar by Antiochus IV (a pagan altar to Zeus over the altar of burnt offering) — fulfilling Daniel 8:13; 9:27; 11:31; 12:11. Jesus in Matthew 24:15 invokes this same Daniel phrase to describe a future desecration, drawing on the Maccabean precedent as the typological pattern for ultimate eschatological abomination.",
+      "scholarly_notes": "The 167 BCE event is the prototype; Jesus presents a future antitype. Most premodern commentators and many moderns (e.g., R.T. France) read the second-temple destruction (70 CE) as the immediate referent, with possible eschatological extension.",
+      "confidence_level": "high"
+    },
+    {
+      "apocrypha_work_slug": "sirach",
+      "apocrypha_reference": "Sirach 24:1-23",
+      "canonical_reference": "John 1:1-18",
+      "connection_type": "theological_development",
+      "description": "Sirach 24 is Wisdom's autobiographical speech: she came forth from the mouth of the Most High, sought a resting place among the nations, was commanded to dwell in Jacob, took root in Israel, and was identified with 'the book of the covenant of the Most High God, the law that Moses commanded us.' John 1 takes this Wisdom-Torah identification and re-applies it to Jesus: the Word who was with God and was God, who took flesh and 'tabernacled' among us, full of grace and truth — explicit Sinai vocabulary. The conceptual lineage is Sirach 24 → Wisdom of Solomon 7-9 → John 1.",
+      "scholarly_notes": "Daniel Boyarin, Larry Hurtado, and Andrew Glicksman have all traced this development in detail. The Sirach 24 → John 1 trajectory is now standard in critical scholarship.",
+      "confidence_level": "high"
+    },
+    {
+      "apocrypha_work_slug": "sirach",
+      "apocrypha_reference": "Sirach 51:23-27",
+      "canonical_reference": "Matthew 11:28-30",
+      "connection_type": "allusion",
+      "description": "Sirach 51:23-27 closes the book with an invitation: 'Draw near to me, you who are uneducated... Put your neck under her yoke, and let your soul receive instruction... See with your eyes that I have labored but little and found for myself much rest.' Jesus' invitation in Matthew 11:28-30 — 'Come to me, all who labor and are heavy laden... Take my yoke upon you... and you will find rest for your souls' — is structured around the same yoke/labor/rest vocabulary, with Jesus placing himself in the position Sirach occupied for Wisdom-Torah.",
+      "scholarly_notes": "Celia Deutsch, Lady Wisdom, Jesus, and the Sages: Metaphor and Social Context in Matthew's Gospel (1996), develops this parallel at length.",
+      "confidence_level": "high"
+    },
+    {
+      "apocrypha_work_slug": "tobit",
+      "apocrypha_reference": "Tobit 4:10; 12:9",
+      "canonical_reference": "Acts 10:4",
+      "connection_type": "thematic_parallel",
+      "description": "Tobit teaches that 'almsgiving delivers from death and keeps you from going into the Darkness... almsgiving from such a one will be a fine offering in the presence of the Most High' (4:10; 12:9). When Cornelius the centurion encounters the angel in Acts 10:4, he is told 'your prayers and your alms have ascended as a memorial before God' — using closely parallel cultic-memorial vocabulary. Luke is writing within an established Second Temple framework that Tobit articulates clearly.",
+      "scholarly_notes": "The 'memorial offering' language draws on Leviticus 2:2 and similar Pentateuchal cultic vocabulary, but the specific link of almsgiving to memorial-offering status is most clearly developed in Tobit and Sirach 35.",
+      "confidence_level": "medium"
+    },
+    {
+      "apocrypha_work_slug": "1-enoch",
+      "apocrypha_reference": "1 Enoch 1:9",
+      "canonical_reference": "Jude 14-15",
+      "connection_type": "quotation",
+      "description": "Jude 14-15 explicitly attributes a quotation to 'Enoch, the seventh from Adam' — and the quotation matches 1 Enoch 1:9 with high precision: 'Behold, the Lord came with his holy myriads, to execute judgment on all and to convict all the ungodly of all their deeds of ungodliness that they have committed in such an ungodly way, and of all the harsh things that ungodly sinners have spoken against him.' This is the New Testament's clearest direct quotation of a non-canonical Jewish work as prophetic Scripture.",
+      "scholarly_notes": "The connection is undisputed in critical scholarship and acknowledged across confessional lines. Various theological frameworks have been developed to explain Jude's use of 1 Enoch — ranging from regarding 1 Enoch as inspired in part (Ethiopian Orthodox), to regarding Jude as quoting a text widely respected without endorsing the whole, to regarding Jude as preserving an authentic Enochic prophecy by inspiration apart from the larger book.",
+      "confidence_level": "high"
+    },
+    {
+      "apocrypha_work_slug": "community-rule-1qs",
+      "apocrypha_reference": "1QS III, 13 - IV, 26",
+      "canonical_reference": "1 John 1:5-7",
+      "connection_type": "thematic_parallel",
+      "description": "The 'Two Spirits' discourse in 1QS III-IV develops a stark dualism: God created two spirits to walk in until the end — the spirits of truth and deceit, light and darkness, with the children of light walking in the ways of truth and the children of darkness in the ways of perversion. 1 John 1:5-7 ('God is light and in him is no darkness at all... if we walk in the light as he is in the light...') and the broader Johannine corpus deploy strikingly similar light/darkness, truth/deceit vocabulary in a covenant-fellowship framework. Direct literary dependence is debated; common Second Temple background is widely accepted.",
+      "scholarly_notes": "James Charlesworth, John Ashton, and Raymond Brown all addressed this parallel extensively. The current scholarly consensus holds that John inhabits the same conceptual world as Qumran without necessarily depending on Qumran texts directly — a 'family resemblance' rather than a textual genealogy.",
+      "confidence_level": "medium"
+    }
+  ]
+}
