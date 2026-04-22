@@ -1,5 +1,9 @@
 # BATCH 3 — Typography + Color + Citations + Diagram Library
 
+**Status:** COMPLETE — 2026-04-22 (Cowork session). See [[session_batch-3_2026-04-22]] for ship record, file list, and Windows-direct merge ritual. Feature branch `feat/batch-3-design-foundation` pushed; merge-to-`main` left for Marcus Windows-direct because sandbox `.git/index` corrupted mid-session and `next build` bus-errored in sandbox (Vercel CI is the authoritative build gate).
+
+---
+
 ## READ FIRST
 - `STATUS.md`
 - `OPERATING_RULES.md`
