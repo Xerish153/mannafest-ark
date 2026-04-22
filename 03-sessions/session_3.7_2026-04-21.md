@@ -32,7 +32,7 @@
     - (this session) — session record + STATUS + BATCH_QUEUE updates + audit post-repair append
     No push (sandbox has no GitHub credentials — same Windows-push pattern as Batches 1.5, 2, 3.5).
 
-13. **MannaFest repo.** `supabase/migrations/043_*.sql` and `supabase/migrations/044_*.sql` written to the repo working tree only; not committed to any branch in this session because the Cowork sandbox can't push to the `MannaFest` repo either. Marcus to create `feature/batch-3-7-verses-unique-constraint` on Windows, commit both files, and push.
+13. **MannaFest repo.** Created feature branch `feature/batch-3-7-verses-unique-constraint` off `main` with a single commit (`1a3918e`) adding both SQL migration files. Local-only; sandbox has no GitHub credentials for the MannaFest repo either. Marcus to push from Windows.
 
 ## What shipped to production
 
