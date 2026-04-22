@@ -1,7 +1,7 @@
 # Batch 3.7 — Checkpoint
 
 **Date:** 2026-04-21
-**Branch:** `feature/batch-3-7-bible-canonical-audit` (pushed, not merged)
+**Branch:** `feature/batch-3-7-bible-canonical-audit` — **committed locally in the vault (commit `30b1886`); awaiting Marcus's push from Windows.** The Cowork sandbox has no GitHub credentials for `https://github.com/Xerish153/mannafest-ark.git`, matching the pattern noted in `STATUS.md` for prior batches ("awaiting Marcus's push from Windows").
 
 Audit complete. **0 books with gaps** (KJV 0, WEB 0, ASV 0). All 3,567 chapter groups across the three canonical translations match the reference exactly — row count, distinct verse count, and max verse number all equal the canonical value for every book × chapter. Step 5 (INSERT repair) is a no-op; no `batch-3-7-repair-log.md` will be written.
 
