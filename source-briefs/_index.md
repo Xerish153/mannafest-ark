@@ -45,7 +45,7 @@ Briefs land here **before** Cowork ships the page. The page implementation is ju
 | # | Title | Slug | Route | Status |
 |---|---|---|---|---|
 | 9 | Messianic Psalms | `messianic-psalms` | `/study/messianic-psalms` | Brief landed; **existing 810-line page** (brief mislabels "new"); needs blocker §C decision; **code halted** |
-| 10 | Genealogies of Christ | `genealogies-of-christ` | `/study/genealogies-of-christ` (brief slug) ⚠ existing page lives at `/study/genealogies` | Brief landed; **slug conflict** per blocker §D; **code halted** |
+| 10 | Genealogies of Christ | `genealogies` | `/study/genealogies` (brief slug) ⚠ existing page lives at `/study/genealogies` | Brief landed; **slug conflict** per blocker §D; **code halted** |
 
 ### Round 5 — Tier 2
 
@@ -71,7 +71,7 @@ The briefs cross-link heavily. A coherent reading order:
 7. **creation-to-new-creation** — the spatial arc; ties the whole canonical narrative together
 8. **typology-of-christ** — the hub that delegates to all the typology-tagged feature pages above
 9. **messianic-psalms** — six-psalm life-of-Christ arc; references the Hallel and Melchizedek priesthood
-10. **genealogies-of-christ** — the historical execution of the messianic line; references Tamar and Rahab from Scarlet Thread
+10. **genealogies** — the historical execution of the messianic line; references Tamar and Rahab from Scarlet Thread
 11. **names-of-god** — the divine self-disclosure timeline; capstone is "I AM" applied to Christ
 12. **armor-of-god** — God's wardrobe lent to His people; references the *magen* shield from Names of God
 13. **fruit-of-the-spirit** — the Spirit-formed character of New Covenant believers; references Galatians' inclusion theme
@@ -89,7 +89,7 @@ See `_ark/batch-c2-blockers.md` for the full halt rationale. In summary:
   - **A.** Sequence (park C.2 vs scoped run vs roster reshape)
   - **B.** Vision §7.7 "light retrofit" rule applicability
   - **C.** Existing-page disposition (rewrite vs extend in place) for seed-promise, bronze-serpent, suffering-servant, tabernacle, messianic-psalms, genealogies
-  - **D.** Slug conflict on `/study/genealogies` ↔ `/study/genealogies-of-christ`
+  - **D.** Slug conflict on `/study/genealogies` ↔ `/study/genealogies`
   - **E.** Routing convention for retired-trail promotions (`/study/*` vs Doctrine D.7's `/featured/*`)
   - **F.** Wave 1 commentary backing — block C.2 on Wave 1 or accept inline-render debt
   - **G.** Vision §7.8 roster amendment for the 8 C.2-only pages (Covenants, Scarlet Thread as feature, Tabernacle as feature, Creation to New Creation, Messianic Psalms as feature, Names of God, Armor of God, Fruit of the Spirit, Seven Churches)

@@ -1,5 +1,5 @@
 # Source Brief — Genealogies of Christ
-**Route:** `/study/genealogies-of-christ`
+**Route:** `/study/genealogies`
 **Status:** Locked for retrofit (Batch C.2 consumable)
 **Sourcing pass:** 2026-04-21, Claude + Pastor Marc
 **Scripture anchor:** Matthew 1:1–17 · Luke 3:23–38
