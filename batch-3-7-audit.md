@@ -252,3 +252,29 @@ Expected per translation: 66 books, 1,189 chapters, 31,102 verses.
 | 3 John | 1:✓ | pass |
 | Jude | 1:✓ | pass |
 | Revelation | 3:✓, 16:✓, 19:✓ | pass |
+
+---
+
+## Post-repair verification (2026-04-21, after migrations 043 + 044)
+
+Re-ran the same integrity query against `public.verses` after migration 043 added the named UNIQUE constraint and 044 dropped it again (see Step 6 finding below). Results:
+
+| Check | Value | Pass? |
+|---|---:|:---:|
+| Total rows (KJV + WEB + ASV) | 93,306 | ✓ (= 31,102 × 3) |
+| Chapter groups | 3,567 | ✓ (= 1,189 × 3) |
+| Chapter groups where `row_count ≠ distinct_verse_count` or `row_count ≠ max_verse_num` | 0 | ✓ |
+| Duplicate `(translation_id, book_id, chapter_num, verse_num)` groups across all 5 translations (155,510 rows) | 0 | ✓ |
+
+Zero drift from the pre-repair state. Every book × chapter × translation still matches the canonical reference exactly.
+
+## Step 6 finding — UNIQUE constraint was already in place
+
+Migration 043 added `verses_translation_book_chapter_verse_uniq` on `(translation_id, book_id, chapter_num, verse_num)`. A pg_constraint introspection immediately afterward showed a second row:
+
+```
+verses_translation_id_book_id_chapter_num_verse_num_key
+  → UNIQUE (translation_id, book_id, chapter_num, verse_num)
+```
+
+That auto-generated name is Postgres's convention for `UNIQUE (...)` declared inline in `CREATE TABLE`, not via `ADD CONSTRAINT`. Meaning the original `verses` table already carried an equivalent UNIQUE constraint all along — Step 6 was effectively a no-op. Migration 044 dropped the redundant named constraint from 043. Net DB change from the pair: zero. Both migration files are preserved in `supabase/migrations/` to keep the history honest, each with a top-of-file comment explaining the round-trip.
