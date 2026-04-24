@@ -1,336 +1,244 @@
 # Source Brief — Messianic Psalms
-**Route:** `/study/messianic-psalms`
-**Status:** Locked for retrofit (Batch C.2 consumable)
-**Sourcing pass:** 2026-04-21, Claude + Pastor Marc
-**Scripture anchor:** Luke 24:44 ("all things must be fulfilled, which were written in the law of Moses, and in the prophets, and in the psalms, concerning me")
+
+**Target route:** `/featured/messianic-psalms`
+**Wave:** 2b #13
+**Walk status:** Walk-complete (confirm against Pastor Marc's walk; brief authored 2026-04-23 per F3 preemptive-brief pass)
+**Primitives used:** bespoke `<MessianicPsalmsDepth1 />` composing `<ClusterFeature />` from F3 preamble
+**Migrates from:** `/study/messianic-psalms` — existing legacy trail, per F1-01 §Item-3 migration rules applies here (fresh build + delete old + 308 redirect)
 
 ---
 
-## Page intent
+## 1. Page identity
 
-The Old Testament book the New Testament could not stop quoting. The Psalms are cited or alluded to ~75 times in the NT — more than any other OT book. Psalm 110:1 alone is quoted or echoed ~25 times across the New Testament — the most-quoted single OT verse in all of Scripture.
+"All things must be fulfilled, which were written in the law of Moses, and in the prophets, and in the psalms, concerning me." Luke 24:44. The Psalms are not Jesus' inheritance only as devotional literature. They are — by Jesus' own testimony after the resurrection — prophetic material bearing on his specific life and work.
 
-This is not Christian rereading imposed on the Psalter after the fact. The apostles, the Gospel writers, the writer of Hebrews, and Jesus himself draw constantly on the Psalms to identify and explain the Messiah. The page makes that visible.
+The NT writers use the Psalms to explain the gospel. Acts 2 opens Pentecost by interpreting Ps 16. Acts 4 reads Ps 2 over the opposition to the apostles. Matthew, Mark, Luke, and John each weave Ps 22 through the crucifixion narrative. Hebrews reads Ps 110 as the controlling passage on Christ's priesthood. Paul in Rom 15 cites Ps 69 on Christ's rejection. The New Testament does not invent this reading; the NT inherits it.
 
-The aesthetic thesis: the strongest messianic psalms map cleanly to the arc of Christ's life. Six psalms tell the gospel from incarnation to eternal reign. The depth-1 visual is the *life of Christ* told through six songs written 1,000 years before he came.
+This page picks six psalms that — taken together — trace Christ's life from enthronement to session. Each psalm gets its own drilldown with the NT citations that anchor its messianic reading. Ps 22 and Ps 110 are spotlighted as the load-bearing two: Ps 22 because its verse-by-verse correspondence with the crucifixion narrative is among the most remarkable intertextual phenomena in Scripture, and Ps 110 because it is the most-quoted Old Testament chapter in the New Testament.
 
-Distinct from Suffering Servant (one passage, one fulfillment), Bronze Serpent (one event, four moments), Tabernacle (one structure, deep architecture): this page is six self-contained prophecies, each fulfilled at a distinct point in Christ's life, collectively spanning the whole gospel arc.
+Tradition-primary: Charles Spurgeon's *Treasury of David* (1870–1885, PD). Spurgeon covered all 150 psalms over fifteen years, assembled quotations from prior commentators (Calvin, Henry, Gill, many others), and added his own exposition. For Messianic Psalms, *Treasury of David* is the single richest PD source.
 
-## Hero
+Per Vision §4.6, every psalm on this page is labeled with the tri-fold taxonomy: **Fulfilled in First Coming**, **Awaiting Second Coming**, or **Progressively Fulfilled**.
 
-**Tagline:** *"The book Jesus quoted on the cross."*
+---
 
-**Subtitle:** *Dying, abandoned, parched — and his words came from a song David wrote a thousand years before. Psalm 22:1, on the lips of the Crucified.*
+## 2. Depth 1 visual spec
 
-**3-stat strip:**
-- 75+ NT citations (more than any OT book)
-- Psalm 110:1 — the most-quoted OT verse in the entire NT
-- 6 psalms tracing the full life of Christ
+**Component:** bespoke `<MessianicPsalmsDepth1 />` composing `<ClusterFeature />`.
 
-**Hero visual:** A single emphasized scripture block centered on the page:
+**Layout:** six-psalm life-of-Christ arc. A horizontal arc (curved or life-stage-organized) showing the progression:
 
-> *"My God, my God, why hast thou forsaken me?"* — Psalm 22:1
->
-> *"My God, my God, why hast thou forsaken me?"* — Matthew 27:46
+- **Ps 2** — Enthronement ("Thou art my Son; this day have I begotten thee")
+- **Ps 16** — Resurrection ("thou wilt not leave my soul in hell")
+- **Ps 22** — Crucifixion ("My God, my God, why hast thou forsaken me") — **spotlighted, 2× visual weight**
+- **Ps 45** — Bridegroom / royal wedding ("Thy throne, O God, is for ever and ever")
+- **Ps 69** — Rejection ("they gave me also gall for my meat; and in my thirst they gave me vinegar to drink")
+- **Ps 110** — Ascension and session ("Sit thou at my right hand, until I make thine enemies thy footstool") — **spotlighted, 2× visual weight**
 
-Two identical lines, two attribution chips. The visual restraint is the point — the same words, written 1,000 years apart, spoken by David and then by the dying Christ. No image needed. The repetition is the argument.
+Each entry clickable into its drilldown. Each carries its tri-fold taxonomy chip inline (Fulfilled in First Coming / Awaiting Second Coming / Progressively Fulfilled) so the taxonomy is legible at depth 1.
 
-Treatment notes:
-- Serif typography at large scale (the Source Serif 4 face from Batch 3)
-- Subtle scarlet accent under the second line to mark the cross moment
-- Minimal chrome around the verses; let the parallel breathe
-- Below the two-verse hero, a transition line: *"This is the book Jesus reached for in the moment of his death. It was not the only one. Six of its songs trace his entire life."*
-- Mobile: verses stack vertically with attribution chips beneath each; the two-line parallel still legible
+No verse text at depth 1 beyond each psalm's title tag (≤12 words).
 
-## Depth 1 — Invitation (6-card grid: the life of Christ in psalms)
+**Ten-second test:** "Six psalms, life-of-Christ progression. Two are spotlighted (Ps 22 crucifixion, Ps 110 session). Click any for the NT anchor citations."
 
-**Layout:** Six bento cards arranged in chronological life-of-Christ order, mixed sizes per the approved aesthetic. Each card is a psalm + the life event it fulfills.
+---
 
-**Style notes:**
-- Warm Bible Project palette with semantic-number color accents per card (each psalm gets a subtle accent tied to its number — Ps 2 in deep indigo, Ps 22 in scarlet, Ps 45 in royal purple, Ps 69 in muted sorrow-blue, Ps 110 in priestly gold, Ps 118 in triumphal crimson)
-- Each card displays: psalm number (large), psalm theme, life event chip, the strongest single fulfilling verse pair
-- Hover state reveals one-line elaboration
-- Click → depth-3 drilldown for that psalm
-- Mobile: grid stacks vertically; each card scales but stays prominent
-- Scroll-reveal sequencing matches life-arc (cards fade in chronologically as user scrolls)
+## 3. Depth 2 framework sections
 
-### The 6 featured psalms
+### Section 1 — Christ's own hermeneutic (Luke 24:44)
 
-| # | Psalm | Theme | Christ life event | NT warrant |
-|---|---|---|---|---|
-| 1 | **Psalm 2** | Coronation of God's Son; the nations rage against the Anointed | Sonship and incarnation; rulers conspire | Acts 4:25–28; Heb 1:5; 5:5 |
-| 2 | **Psalm 118** | The rejected stone becomes the chief cornerstone; "Hosanna" | Triumphal entry; rejection-and-vindication pattern | Matt 21:9, 21:42; Acts 4:11; 1 Pet 2:7 |
-| 3 | **Psalm 22** ⭐ | The crucifixion — pierced hands and feet, divided garments, mockery | The cross itself | Matt 27:46 (Jesus quotes verse 1); John 19:23–24 |
-| 4 | **Psalm 69** | The suffering servant; vinegar offered to drink; zeal for God's house | Multiple passion details | John 2:17; Matt 27:34; Acts 1:20 |
-| 5 | **Psalm 110** ⭐ | Eternal priest-king after the order of Melchizedek; David's Lord | Resurrection, exaltation, ongoing priesthood | Matt 22:41–46; Acts 2:34; Heb 5–7 |
-| 6 | **Psalm 45** | The royal wedding of the King | Christ as King-Bridegroom; eternal throne | Heb 1:8–9 (quotes verse 6 directly) |
+- **Luke 24:44** — "these are the words which I spake unto you, while I was yet with you, that all things must be fulfilled, which were written in the law of Moses, and in the prophets, and in the psalms, concerning me."
+- **Luke 24:27** — the parallel on the road to Emmaus: "beginning at Moses and all the prophets, he expounded unto them in all the scriptures the things concerning himself."
+- The NT's reading of the Psalms as prophetic-of-Christ is not a Christian imposition; it is the Risen Christ's own hermeneutic transmitted to his disciples.
+- The site's frame: the messianic reading of these six psalms is apostolic, not post-apostolic.
 
-### Closing element below the grid
+### Section 2 — Ps 22 as the cry from the cross
 
-A single emphasized line in scarlet:
+- Each verse of Ps 22 echoed in the crucifixion narrative:
+  - Ps 22:1 → Matt 27:46 / Mark 15:34 (the forsaking cry)
+  - Ps 22:7–8 → Matt 27:39–43 (mocking, head-shaking, "he trusted in God")
+  - Ps 22:16 → Luke 23:33 / John 19:37 (hands and feet pierced — Hebrew reading debated; LXX "they pierced")
+  - Ps 22:18 → John 19:23–24 (garments parted, casting lots)
+  - Ps 22:31 → Luke 23:46 / John 19:30 ("he hath done this" / "it is finished")
+- The crucifixion narrative is not narrating a story that happens to echo Ps 22. The Evangelists are showing that Jesus' crucifixion was the scene Ps 22 described a thousand years prior.
+- **Textual note: Ps 22:16.** The Masoretic Hebrew reads *ka'ari* ("like a lion") at the pierced-hands-and-feet position; the Septuagint reads *ōryxan* ("they pierced"). The Dead Sea Scrolls (5/6HevPs) support a verbal form compatible with "pierced." Surface honestly — this is one of the sharpest OT / LXX / DSS textual-critical questions, and the messianic reading depends on it. Pastor Marc editorial slot available here.
 
-> **One thousand years. Six songs. One life that fulfilled them all.**
+### Section 3 — Ps 110 as the NT's most-quoted psalm
 
-## Depth 2 — Framework
+- Ps 110:1 is cited or alluded to more than 20 times across the NT.
+- **Matt 22:41–46** — Jesus uses Ps 110:1 to stump the Pharisees: how is David's son also David's Lord?
+- **Acts 2:34–36** — Peter's Pentecost sermon climaxes with Ps 110.
+- **Heb 1:13** — angelic subordination argued from Ps 110.
+- **Heb 5–7** — the Melchizedek-priesthood argument rests on Ps 110:4.
+- The "session at the right hand" motif throughout the NT (Rom 8:34, Eph 1:20, Col 3:1, 1 Pet 3:22) traces to Ps 110.
+- Ps 110 is load-bearing for christology (Jesus as David's Lord), ecclesiology (priestly mediation), and eschatology (until footstool).
 
-Six framework sections.
+### Section 4 — Tri-fold taxonomy per Vision §4.6
 
-### 2.1 The full inventory — 12 messianic psalms
+Each of the six psalms labeled:
 
-Expansion of the depth-1 grid to the full canonical set per Reformed scholarship. The six featured psalms get short re-summary cards; six additional psalms get brief treatment cards.
+- **Ps 2** — Progressively Fulfilled. Begotten-Son language inaugurated at Jesus' baptism / resurrection (Acts 13:33); the worldwide inheritance awaits consummation.
+- **Ps 16** — Fulfilled in First Coming. Resurrection of the "Holy One" from Sheol — fulfilled at Easter per Acts 2 and Acts 13.
+- **Ps 22** — Fulfilled in First Coming. Crucifixion scene.
+- **Ps 45** — Progressively Fulfilled. Royal-wedding / Bridegroom inaugurated in Christ's first coming (John 3:29, Eph 5:25–32); marriage-supper awaiting second (Rev 19:7–9).
+- **Ps 69** — Fulfilled in First Coming. Rejection, vinegar-and-gall, zeal-for-house.
+- **Ps 110** — Progressively Fulfilled. Session inaugurated at ascension; full enemies-footstool subjugation awaiting second coming.
 
-| Psalm | Theme | Strongest fulfillment | NT citation |
-|---|---|---|---|
-| **Psalm 2** ⭐ | Coronation of the Son | Acts 4:25–28 | featured |
-| **Psalm 8** | The Son of Man crowned with glory | Heb 2:6–9 | brief |
-| **Psalm 16** | The Holy One not abandoned to corruption (resurrection) | Acts 2:25–32; 13:35 | brief |
-| **Psalm 22** ⭐ | The crucifixion in detail | Matt 27:46; John 19:23–24 | featured + spotlight (§2.2) |
-| **Psalm 40** | "I delight to do thy will" / sacrifice replaced by obedience | Heb 10:5–9 | brief |
-| **Psalm 41** | Betrayal by a close friend who shares bread | John 13:18 | brief |
-| **Psalm 45** ⭐ | The royal wedding of the King | Heb 1:8–9 | featured |
-| **Psalm 69** ⭐ | Zeal for God's house; vinegar to drink | John 2:17; Matt 27:34 | featured |
-| **Psalm 72** | The reign of the righteous king from sea to sea | Implicit royal-fulfillment | brief |
-| **Psalm 89** | The covenant with David established forever | Acts 13:22–23 | brief |
-| **Psalm 110** ⭐ | The eternal priest-king | Matt 22:41–46; Heb 5–7 | featured + spotlight (§2.3) |
-| **Psalm 118** ⭐ | The rejected stone becomes the cornerstone | Matt 21:42; Acts 4:11; 1 Pet 2:7 | featured |
+Note: zero "Awaiting Second Coming" only. All six have either first-coming fulfillment or progressive fulfillment with second-coming consummation. This is a compositional feature of the six chosen, not a site-claim about the full Psalter.
 
-Same matching-card layout as depth 1 but compressed; six "brief" cards in their own subgroup. Filterable by life-event category for the curious student.
+### Section 5 — Spurgeon's Treasury of David as primary commentary source
 
-### 2.2 Psalm 22 — written before crucifixion existed
+- Charles Haddon Spurgeon (1834–1892). *Treasury of David* in seven volumes, written over fifteen years. PD.
+- For each psalm: Spurgeon's own exposition, then a "Hints to Preachers" section, then Spurgeon's selection of quotations from earlier commentators.
+- The site treats Spurgeon as Puritan-tradition featured voice across these six psalm drilldowns per Doctrine A. "Show other voices" expands to reveal Calvin, Henry, Gill (also PD) in each drilldown.
 
-Featured spotlight section. Psalm 22 is to the Psalms what Isaiah 53 is to the Prophets — the single most extensive prediction-fulfillment match in the entire book.
+### Section 6 — Other significant messianic psalms (parking-lot)
 
-**The textual point that opens the section:**
+Brief mention only at depth 2 (one sentence per psalm, no drilldown on this page):
 
-Psalm 22 was written by David, c. 1000 BC. Crucifixion as an execution method was developed by the Persians c. 600 BC and perfected by the Romans starting in the 3rd century BC. When David wrote *"they pierced my hands and my feet"* (Psalm 22:16), there was no such thing as crucifixion. The Mosaic legal punishments were stoning, burning, beheading, and strangling. None of them pierced hands and feet.
+- Ps 8 (Son of Man — Heb 2:6–9)
+- Ps 40 (obedient sacrifice — Heb 10:5–10)
+- Ps 72 (messianic king / nations)
+- Ps 89 (Davidic covenant failure and promise)
+- Ps 118 (cornerstone — Matt 21:42)
+- Ps 132 (the oath to David)
 
-David is describing a death that did not yet exist as a method when he wrote it. A thousand years later, Christ is executed by exactly that method.
+Parking-lot for Wave 7+ expansion; the six chosen are the page's scope.
 
-**The match table:**
+---
 
-| Psalm 22 prediction | Gospel fulfillment |
-|---|---|
-| 22:1 — *"My God, my God, why hast thou forsaken me?"* | Matt 27:46 — Jesus quotes this verse directly from the cross |
-| 22:7 — *"All they that see me laugh me to scorn"* | Matt 27:39 — passers-by mock him |
-| 22:8 — *"He trusted on the LORD; let him deliver him"* | Matt 27:43 — chief priests mock with almost verbatim words |
-| 22:14 — *"I am poured out like water… all my bones are out of joint"* | Crucifixion physiology — joint dislocation under the cross's weight |
-| 22:15 — *"My tongue cleaveth to my jaws"* | John 19:28 — *"I thirst"* |
-| 22:16 — *"They pierced my hands and my feet"* | The crucifixion itself; John 20:25 (Thomas: *"the print of the nails"*) |
-| 22:17 — *"I may tell all my bones; they look and stare upon me"* | The crucified are stripped, exposed, on display |
-| 22:18 — *"They part my garments… and cast lots upon my vesture"* | John 19:23–24 — the only Gospel direct citation of Psalm 22 |
+## 4. Depth 3 drilldowns (6 psalms)
 
-**The structural shift at 22:21:**
+Each drilldown carries:
+- **Full psalm text** (KJV default + translation switcher)
+- **NT anchor citations in full** (the verses that cite this psalm messianically, with Gospel + Epistle parallels)
+- **Spurgeon-featured commentary** (Doctrine A: ≤50-word excerpt from *Treasury of David*, tradition chip "Puritan")
+- **Show other voices** expansion: Calvin (Reformed, PD), Henry (Puritan, PD), Gill (Evangelical, PD)
+- **Tri-fold taxonomy chip** prominent (Fulfilled in First / Awaiting Second / Progressively Fulfilled)
 
-Halfway through, the psalm pivots. The first 21 verses are unrelieved suffering. Beginning at verse 22, there is sudden victory: *"I will declare thy name unto my brethren… all the ends of the world shall remember and turn unto the LORD."* The same arc as Isaiah 53 — suffering followed by global vindication.
+1. **`ps-2`** — Full Ps 2 text. NT anchors: Acts 4:25–26 (prayer of the early church using Ps 2 over their opposition), Acts 13:33 (Paul's Antioch sermon — "this day have I begotten thee" applied to the resurrection), Heb 1:5, Heb 5:5, Rev 2:27, 12:5, 19:15. Taxonomy: Progressively Fulfilled.
 
-**The relationship to Isaiah 53:**
+2. **`ps-16`** — Full Ps 16 text. NT anchors: Acts 2:25–28 (Peter's Pentecost sermon citing vv. 8–11), Acts 13:35 (Paul citing v. 10 at Antioch). The verse-10 argument: David died and was buried (therefore Ps 16 cannot be about David); the resurrection of Christ fulfills the "not suffer thine Holy One to see corruption" claim. Taxonomy: Fulfilled in First Coming.
 
-Both texts predict a substitutionary suffering followed by exaltation. Psalm 22 supplies the *physical detail* (pierced, mocked, garments divided, thirst); Isaiah 53 supplies the *theological meaning* (he bore our griefs, he was wounded for our transgressions). The two together form the most complete pre-Christian portrait of the cross. Cross-link to **Suffering Servant** brief.
+3. **`ps-22`** — Full Ps 22 text. NT anchors: Matt 27:35, 27:39–43, 27:46; Mark 15:24, 15:29–32, 15:34; Luke 23:33–46; John 19:23–24, 19:28–30, 19:37. Textual note on v. 16 (ka'ari / pierced). Editor's Notes drawer eligible with Pastor Marc slot. Taxonomy: Fulfilled in First Coming.
 
-Featured commentary voice for this section: **Charles Spurgeon**, *Treasury of David* on Psalm 22 (PD; the standard 19th-century evangelical exposition; Spurgeon dedicated decades to this psalm).
+4. **`ps-45`** — Full Ps 45 text. NT anchors: Heb 1:8–9 (the Father addressing the Son: "Thy throne, O God, is for ever and ever"). Bridegroom typology forward-links to Eph 5:25–32 and Rev 19:7–9. Taxonomy: Progressively Fulfilled.
 
-Pastor Marc editorial hook: the "described before the method existed" observation is the kind of textual point that earns founder voice.
+5. **`ps-69`** — Full Ps 69 text. NT anchors: John 2:17 ("the zeal of thine house hath eaten me up" — the temple cleansing), John 15:25 ("hated me without a cause"), Rom 15:3 ("the reproaches of them that reproached thee fell on me"), Matt 27:34, 27:48 (vinegar and gall), Acts 1:20 (imprecation applied to Judas — Ps 69:25). Taxonomy: Fulfilled in First Coming. Contested: the imprecatory verses of Ps 69 (22–28) — how to read an imprecation as messianic. Surface honestly; Spurgeon's Treasury has sober exposition.
 
-### 2.3 Psalm 110 — the most-quoted Old Testament verse in the entire NT
+6. **`ps-110`** — Full Ps 110 text. NT anchors: Matt 22:41–46 / Mark 12:35–37 / Luke 20:41–44 (Jesus' own Ps 110 argument), Acts 2:34–36, Rom 8:34, 1 Cor 15:25, Eph 1:20–22, Col 3:1, Heb 1:3, 1:13, 5:5–6, 5:10, 6:20, 7:15–17, 7:21, 8:1, 10:12–13, 12:2, 1 Pet 3:22. Longest NT-citation list on this page. Taxonomy: Progressively Fulfilled.
 
-Featured spotlight section. Seven verses; vastly outsized influence on the New Testament.
+---
 
-**The stat that opens the section:**
+## 5. Verse list (cross-surface registration)
 
-Psalm 110:1 — *"The LORD said unto my Lord, Sit thou at my right hand, until I make thine enemies thy footstool"* — is quoted or alluded to roughly 25 times across the New Testament. No other Old Testament verse comes close. It appears in:
+- Ps 2 (entire chapter)
+- Ps 16 (entire chapter, especially vv. 8–11)
+- Ps 22 (entire chapter)
+- Ps 45 (entire chapter)
+- Ps 69 (entire chapter)
+- Ps 110 (entire chapter)
+- Luke 24:27 · 24:44
+- Matt 22:41–46 · 27:34 · 27:35 · 27:39–43 · 27:46
+- Mark 12:35–37 · 15:24 · 15:29–32 · 15:34
+- Luke 20:41–44 · 23:33–46
+- John 2:17 · 15:25 · 19:23–24 · 19:28–30 · 19:37
+- Acts 1:20 · 2:25–28 · 2:34–36 · 4:25–26 · 13:33 · 13:35
+- Rom 8:34 · 15:3
+- 1 Cor 15:25
+- Eph 1:20–22 · 5:25–32
+- Col 3:1
+- Heb 1:3 · 1:5 · 1:8–9 · 1:13 · 2:6–9 · 5:5–6 · 5:10 · 6:20 · 7:15–17 · 7:21 · 8:1 · 10:5–10 · 10:12–13 · 12:2
+- 1 Pet 3:22
+- Rev 2:27 · 12:5 · 19:7–9 · 19:15
 
-- The Gospels (Matt 22:44; Mark 12:36; Luke 20:42)
-- Acts (2:34–35; 7:56)
-- Pauline epistles (1 Cor 15:25; Eph 1:20–22; Col 3:1)
-- Hebrews (1:3, 13; 8:1; 10:12–13; 12:2)
-- 1 Peter (3:22)
+Every verse → `featured_page_refs` row to `/featured/messianic-psalms`.
 
-The early church reached for this verse more than any other OT text to explain Christ.
+**Note:** Ps 22 also cross-registers to `/featured/scarlet-thread` (Batch F1, via the crimson worm of Ps 22:6). Dual registration expected and correct; the `<FeaturedStudiesOnVerse />` component renders both feature pages in the Ps 22 verse page's Featured Studies cluster.
 
-**The Lord-Lord paradox (Matt 22:41–46):**
+---
 
-Jesus poses Psalm 110:1 to the Pharisees as a riddle: David, by the Holy Spirit, calls *his own descendant* "Lord." How can the Messiah be both David's son (lower) and David's Lord (higher)? *"And no man was able to answer him a word, neither durst any man from that day forth ask him any more questions."* (Matt 22:46)
+## 6. Commentary tradition priority
 
-Jesus' point: Messiah must be both David's descendant *and* divine. The Pharisees' purely human Messiah-expectation cannot account for what the Psalm actually says. The Trinity is implicit in the verse.
+- **Patristic** — Augustine on Psalms (PD NPNF), Chrysostom on NT citations
+- **Reformed** — Calvin on the Psalms (PD)
+- **Puritan** — **Spurgeon, *Treasury of David* (PD)** — primary featured voice for this page's Doctrine A render
+- **Evangelical** — Gill on each psalm (PD); Henry (PD)
+- **Jewish tradition** — only where messianic reading is disputed (e.g., Ps 22:16 ka'ari); Rashi and Ibn Ezra citations via PD-safe translations
+- **Editor** — Pastor Marc on Ps 22 drilldown (ka'ari textual note) and Ps 110 drilldown (the "David's Son and David's Lord" climax)
 
-**Verse 4 — Melchizedek priesthood:**
+---
 
-*"Thou art a priest for ever after the order of Melchizedek."* This single verse is the foundation of the entire argument of Hebrews 5–7. Christ is not a Levitical priest (he is from Judah, not Levi). He is a priest of a different, older, eternal order — Melchizedek's, the priest-king who blessed Abraham (Gen 14:18–20).
+## 7. Sourcing caveats
 
-Cross-link to **Typology of Christ** Persons category, Melchizedek tile (which is the hero type for that category). Cross-link to **Tabernacle §2.3** Hebrews 8–10 framework (which references this Hebrews 5–7 argument).
+- **Spurgeon, *Treasury of David*:** PD. Published 1870–1885. The site's primary commentary source for this page. Excerpt per Doctrine A (≤50 words featured, full text in "Show full passage" disclosure).
+- **Calvin on the Psalms:** PD (Calvin d. 1564). Use Beveridge or Pringle translation (both PD).
+- **Henry's *Commentary on the Whole Bible*:** PD.
+- **Gill's *Exposition of the Old Testament*:** PD (Gill d. 1771).
+- **Rashi on Psalms:** PD-legal translations (Rosenberg, JPS PD-safe).
+- **Ibn Ezra on Psalms:** PD-legal translations only.
+- **Dead Sea Scrolls Psalms (4QPs, 5/6HevPs):** cite metadata + key variants (e.g., Ps 22:16 reading); do not reproduce manuscript images (licensing care).
+- **LXX Psalms (= LXX Ps 21 for Hebrew Ps 22):** Brenton 1851 PD translation. Useful for the Ps 22:16 ōryxan reading.
+- **No living-author reproduction.** Bruce Waltke, John Goldingay, and other contemporary Psalms scholars — cite only, ≤15 words, if referenced at all. Prefer Spurgeon / Calvin / Henry / Gill who are all PD and cover everything this page needs.
 
-**Verse 1 again — the right hand and the exaltation:**
+---
 
-Throughout the NT, *"sat down at the right hand of the Majesty"* is shorthand for Christ's resurrection-and-exaltation. The phrase comes from Psalm 110:1. Hebrews uses it as the structural pillar of its entire theology.
+## 8. Forward-links and cross-refs
 
-Featured commentary voice for this section: **John Owen**, *Exposition of Hebrews* (PD; the most thorough Reformed treatment of Psalm 110's NT use, embedded in his Hebrews commentary).
+- `ps-22` drilldown → `/featured/scarlet-thread/crimson-worm-psalm-22` (Batch F1). Bidirectional — Scarlet Thread treats the *tola'at shani* (crimson worm) imagery of 22:6; Messianic Psalms treats the full psalm as the crucifixion preview.
+- `ps-22` drilldown → `/featured/suffering-servant` (Batch F1). Thematically adjacent — both present Christ's passion preview from different OT books. Cross-reference, not overlap.
+- `ps-110` drilldown → `/featured/covenants/davidic` drilldown (Batch F3). The Davidic covenant's session-at-the-right-hand consummation. Bidirectional.
+- `ps-110` drilldown → `/featured/names-of-god/el-elyon` drilldown indirectly via Melchizedek (Ps 110:4; Gen 14:18–22; Heb 7). Loose cross-reference.
+- `ps-45` drilldown → `/featured/creation-to-new-creation` eschatological-marriage theme. Loose cross-reference.
 
-### 2.4 Psalms 1 and 2 — the intentional opening of the Psalter
+---
 
-Short framework card. The Psalter is not a random anthology. It has deliberate structure (5 books mirroring the Pentateuch). And several scholars now agree that **Psalms 1 and 2 function together as the introduction to the entire book.**
+## 9. Editor's Notes slot placement
 
-- **Psalm 1** — the way of the righteous one, the Torah-keeper. *"Blessed is the man that walketh not in the counsel of the ungodly… his delight is in the law of the LORD."*
-- **Psalm 2** — the messianic King who rules the nations. *"Thou art my Son; this day have I begotten thee… Kiss the Son, lest he be angry."*
+- **Primary:** Ps 22 drilldown, specifically the v. 16 ka'ari textual note. This is the single most interpretively consequential textual-critical question in the messianic reading; Pastor Marc's voice on how to hold the Masoretic / LXX / DSS evidence is load-bearing.
+- **Secondary:** Ps 110 drilldown, the "David's Son and David's Lord" theological climax (the christological implication of Jesus' own Ps 110 argument).
+- **Tertiary (optional):** Ps 69 drilldown's imprecatory verses treatment — if Pastor Marc wants to frame how a Christian reads imprecatory psalms as messianic without adopting their posture personally.
+- **Drawer tab:** reduced weight at ship; Ps 22 + Ps 110 primary editorial priorities post-ship.
 
-**Together they frame the whole Psalter under Torah and Messiah.** Psalm 1's *"blessed is the man"* finds its fulfillment in Psalm 2's *"blessed are all they that put their trust in him"* (Ps 2:12). The Psalter opens by saying: this whole book is to be read with Torah in one hand and Messiah in the other.
+---
 
-This is why Psalm 2 isn't just one of twelve messianic psalms. It's the messianic psalm the Psalter wants you to read first. Strong founder editorial hook here — the structural insight changes how a student reads the entire book.
+## 10. Known contested points
 
-### 2.5 The Hallel — the song Jesus sang the night he was betrayed
+1. **Ps 22:16 textual reading.** Masoretic *ka'ari* ("like a lion"); LXX *ōryxan* ("they pierced"); DSS 5/6HevPs fragmentary but supports a verbal form closer to LXX. The messianic reading of pierced-hands-and-feet depends on the textual-critical question. Surface fully; this is the page's most delicate exegetical moment.
 
-Featured spotlight card. Psalms 113–118 form the Hallel ("Praise"), the standard Passover liturgy in second-Temple Judaism. They were sung at every Passover meal.
+2. **Ps 2 "begotten"** — whether "this day have I begotten thee" refers to eternal generation (Nicene tradition), incarnation (classical Reformed), baptism, or resurrection (Acts 13:33). Contested in the Trinitarian debates; surface as a tradition-differentiated question.
 
-The arc that the page makes visible:
+3. **Ps 45 addressee.** "Thy throne, O God, is for ever and ever" — addressed to the Davidic king, but Heb 1:8 applies it to the Son as demonstration of his deity. Whether Ps 45 was written expecting a divine human king or was retrospectively read Christologically — contested. Heb 1:8's citation settles the NT reading; the OT reading is debated.
 
-- **Sunday before Passover, AD 30** — Jesus enters Jerusalem on a donkey. The crowd lines the road and sings *"Hosanna! Blessed is he that cometh in the name of the LORD"* — Psalm 118:25–26, the final song of the Hallel. They are unknowingly singing the Triumphal Entry liturgy as it happens.
-- **Thursday evening, AD 30** — Jesus celebrates the Passover meal with the Twelve. *"And when they had sung an hymn, they went out into the mount of Olives"* (Matt 26:30). The hymn is the Hallel — Psalms 113–118. Jesus sings Psalm 118 the night he is betrayed. The same psalm that had been sung *to* him on Sunday, he now sings *himself* on Thursday, knowing what Friday will bring.
-- **Friday, AD 30** — *"The stone which the builders refused is become the head stone of the corner"* (Ps 118:22). Jesus had quoted this verse in the Temple courts that very week (Matt 21:42), naming himself the rejected stone. Within hours of his Hallel singing, the prophecy is fulfilled.
+4. **Imprecatory psalms as messianic.** Ps 69:22–28 calls for judgment on the psalmist's enemies. Acts 1:20 applies Ps 69:25 to Judas. How a Christian reads imprecation in a messianic psalm — contested pastoral-theology question. Section 2 Ps 69 drilldown surfaces; Pastor Marc editorial slot available.
 
-The same psalm — sung *to* him by the crowds, sung *by* him with the Twelve, *fulfilled in* his rejection — across one week.
+5. **"Progressively Fulfilled" taxonomy consistency.** The page labels Ps 2, Ps 45, Ps 110 as Progressively Fulfilled because each has inaugurated-but-not-consummated elements. If Pastor Marc prefers a different taxonomy for any of these (e.g., Ps 110 as Fulfilled in First Coming because the session *has* begun), override.
 
-This is one of the most haunting and beautiful synchronizations in scripture. Pastor Marc editorial hook is unusually strong here.
+6. **Six psalms vs. broader selection.** The parking-lot psalms in Section 6 (Ps 8, 40, 72, 89, 118, 132) all have strong NT messianic citations. The six-chosen is editorial, not exhaustive.
 
-### 2.6 What the apostles saw — the NT's use of the Psalter
+---
 
-Brief framework card on the broader pattern. Quick stat-grid:
+## 11. Non-goals
 
-- **75+** direct citations and clear allusions to Psalms in the NT
-- The Psalter is the **most-cited OT book** in the NT, ahead of Isaiah and Deuteronomy
-- The four most-cited psalms in the NT: **Psalm 110, Psalm 22, Psalm 118, Psalm 2** — three of which appear in the depth-1 grid; all four are in the depth-2 inventory
-- **Jesus himself** quotes from the Psalms more than from any other OT book
+- No site-endorsement of a specific Ps 22:16 textual reading as certain. Surface the evidence; pastor editorial note holds.
+- No resolution of the "eternal generation" question via Ps 2 exposition.
+- No AI-generated psalm commentary. Spurgeon + Calvin + Henry + Gill are more than sufficient.
+- No licensed translation from the BHS / LXX / DSS beyond ≤15-word metadata clips.
+- No exhaustive messianic-psalm catalog — six is scope; expansion is parking-lot.
+- No imprecation endorsement. The imprecatory psalms surfaced pastorally, not prescriptively.
+- No modern critical-scholarship digest on Psalms composition (dating, Davidic authorship questions). The page's authorship claims follow the traditional tradition; critical alternatives are noted where relevant but not centered.
 
-This isn't a Christian rereading; it's the NT itself doing the work of identification. The apostles handed the church a hermeneutic: *read the Psalter christologically because that's how the Psalter was already being read by Jesus and his first followers.*
+---
 
-## Depth 3 — Evidence (per-psalm drilldowns)
+## 12. Review checklist (Pastor Marc, before F3 fires)
 
-Each of the 12 psalms in the depth-2 inventory gets a drilldown. Two templates:
+- [ ] **Six-psalm selection:** Ps 2, 16, 22, 45, 69, 110. Alternative: add Ps 8 (Heb 2:6–9) or Ps 40 (Heb 10:5–10); swap out Ps 69 for Ps 118 (cornerstone).
+- [ ] **Spotlight pair:** Ps 22 + Ps 110. Alternative: spotlight Ps 22 alone; or spotlight Ps 2 + Ps 22 + Ps 110 (three).
+- [ ] **Taxonomy labels:** Fulfilled (Ps 16, 22, 69) vs. Progressively Fulfilled (Ps 2, 45, 110). Alternative: Ps 110 labeled as Fulfilled.
+- [ ] **Ps 22:16 textual-note placement:** depth 2 Section 2 + drilldown note + Pastor Marc editorial slot. Alternative: depth-3 footnote only, skip depth-2 treatment.
+- [ ] **Primary editorial note locations:** Ps 22 ka'ari note + Ps 110 christology. If Pastor Marc wants different primary slots, flag.
+- [ ] **`/study/messianic-psalms` migration:** per F1-01 rules — fresh build + delete `/study/messianic-psalms/page.tsx` + 308 redirect `/study/messianic-psalms` → `/featured/messianic-psalms`. Confirm.
 
-**Template A — full feature drilldown** (the 6 featured psalms): Ps 2, 22, 45, 69, 110, 118
-- Full psalm text in KJV / WEB / ASV (selectable)
-- Hebrew key terms with transliteration where significant (e.g., **mashiach** in Ps 2:2; **kapparim** absent from this set but referenced for Ps 22 atonement language)
-- Historical context (David's situation when writing; or the psalm's superscription if non-Davidic)
-- Detailed prediction-fulfillment match table
-- Featured commentary excerpt per Doctrine A render spec (≤50 words, attributed, tradition-tagged)
-- "Show other voices" expansion with additional commentary
-- Cross-references
-- Per-psalm typological note
+---
 
-**Template B — brief drilldown** (the 6 supplementary psalms): Ps 8, 16, 40, 41, 72, 89
-- Full psalm text (selectable translations)
-- One-paragraph context
-- The single strongest prediction-fulfillment pair
-- One commentary excerpt
-- Cross-references
-
-### Featured commentary voices per psalm
-
-| Psalm | Featured commentary |
-|---|---|
-| Psalm 2 | Calvin, *Commentary on Psalms* (Reformed) |
-| Psalm 22 | Spurgeon, *Treasury of David* — the standard exposition (Puritan) |
-| Psalm 45 | Matthew Henry, *Commentary on the Whole Bible* (Puritan) |
-| Psalm 69 | Spurgeon, *Treasury of David* (Puritan) |
-| Psalm 110 | Owen, *Exposition of Hebrews* — for the NT-citation density argument (Puritan) |
-| Psalm 118 | Calvin, *Commentary on Psalms* (Reformed) |
-
-Spurgeon's *Treasury of David* (1869–1885, fully PD) is the single richest source for the entire page. Spurgeon spent 20+ years on it; it is the most thorough evangelical Psalms commentary in the public domain. Use heavily.
-
-## Sources for Cowork to cite
-
-**Primary scripture sources:** KJV 1611, WEB, ASV 1901
-
-**Public-domain commentary (full use):**
-- **Charles Spurgeon**, *The Treasury of David* (1869–1885) — the primary commentary source for this entire page
-- John Calvin, *Commentary on Psalms* (3 volumes)
-- Matthew Henry, *Commentary on the Whole Bible*
-- Adam Clarke, *Commentary*
-- Jamieson, Fausset & Brown
-- John Gill, *Exposition of the Bible*
-- E.W. Bullinger, *Companion Bible*
-- **John Owen**, *Exposition of Hebrews* (4 volumes) — for Psalm 110 / Melchizedek treatment
-- **Franz Delitzsch**, *Biblical Commentary on the Psalms* (1859) — Hebrew-scholar standard
-
-**Patristic primary sources (cite, limited quotation):**
-- **Augustine**, *Expositions of the Psalms* (c. 392–418 AD) — extensive psalm-by-psalm exposition; the standard early commentary
-- **Justin Martyr**, *Dialogue with Trypho* — extensive use of Psalm 22 (Dialogue 97–106) and Psalm 110 (Dialogue 32, 33, 56, 76)
-- **Tertullian**, *Against Marcion* book V — psalm citations
-- **John Chrysostom**, *Homilies on the Psalms*
-
-**Primary Jewish sources (cite, limited quotation):**
-- **Babylonian Talmud, Sukkah 52a** — discussion of two messiahs reading Psalm 2 messianically
-- **Midrash Tehillim** (Midrash on Psalms) — pre-Christian and early-rabbinic Jewish commentary; reads several of these psalms messianically
-- **Targum on Psalms** — Aramaic paraphrases that frequently insert "Messiah" into messianic-reading verses
-
-**Scholarly / modern (citation only, no text reproduction):**
-- Michael Rydelnik, *The Moody Handbook of Messianic Prophecy* (2019)
-- Robert L. Cole, *The Shape and Message of Book III (Psalms 73–89)*
-- Walter Kaiser, *The Messiah in the Old Testament*
-
-**Do NOT cite:** David Guzik / Enduring Word (copyrighted). Chuck Missler, Troy Brewer, Norbert Lieth (living authors — citation only, no reproduction).
-
-## Visual component requirements
-
-1. **PsalmLifeArcGrid** component (new) — the depth-1 6-card grid arranged in life-of-Christ chronological order with semantic-number color accents per psalm. Reusable for any future page that maps OT material to NT life events (e.g., a future Names of God arc, Feasts arc).
-2. **VerseParallelHero** component (new) — the depth-1 hero with two identical verses (Ps 22:1 / Matt 27:46) and dual attribution chips. Reusable for any future page where the strongest visual is a verbatim quote-match across testaments.
-3. **PsalmInventoryGrid** component (new) — the depth-2 12-psalm comprehensive grid with featured/brief differentiation. Reusable for any future page that needs to display a comprehensive set with a featured subset.
-4. **HallelTimeline** component (new) — the §2.5 spotlight visual showing Sunday-Thursday-Friday Passover-week arc with Psalm 118 highlighted at each point. Possibly bespoke; consider abstracting if other Holy Week pages would reuse.
-5. Existing components reused:
-   - `<TalmudQuoteCard />` (from Scarlet Thread brief) — for Midrash Tehillim, Sukkah 52a, Targum citations
-   - `<FeaturedCommentaryCard />` (Doctrine A standard) — for Spurgeon, Owen, Calvin, Henry featured voices
-   - `<Cite />` component (from Batch 3) — for inline scripture and source citations
-   - `<ComparisonCard />` (from Seed Promise) — for prediction-fulfillment pairs
-   - `<PredictionPair />` (from Suffering Servant brief) — for the Psalm 22 match table in §2.2
-
-## Connection points (cross-links)
-
-This page sits in the broader Messianic Prophecies cluster.
-
-**Inbound links (delegations and references):**
-- **Messianic Prophecies hub** (when built) — this is one of the Tier-1 entries
-- **Suffering Servant** §2 — soft cross-link from the Psalm 22 / Isaiah 53 pairing in §2.2
-- **Typology of Christ** Persons category — Melchizedek tile soft cross-links to §2.3 (Psalm 110:4)
-- **Tabernacle** §2.3 — the Hebrews 8–10 framework references Hebrews 5–7's use of Psalm 110
-
-**Outbound links (this page references):**
-- **Suffering Servant** — bidirectional from §2.2
-- **Typology of Christ** — bidirectional from §2.3 Melchizedek note; soft cross-link from Psalm 22 to the Isaac/Suffering-Righteous typology cluster
-- **Tabernacle** — soft cross-link from §2.3 to Hebrews 5–7 priesthood architecture
-- **Bronze Serpent** — soft cross-link from Psalm 22 (both involve "lifted up" / public display in atonement)
-- **Person profiles** — David (primary author); Melchizedek (Ps 110:4 referent); Korah (Ps 45 superscription notes "for the sons of Korah"); the Twelve (sang the Hallel with Jesus). Cross-link as those retrofits land.
-- **Passover** (future feature page) — the §2.5 Hallel spotlight is the natural hook outward
-- **Triumphal Entry** (future event page or Psalm 118 drilldown deepening) — same Hallel arc
-
-## Editorial posture
-
-Page is a feature page under Vision v2 §7. Present the matches and the citations as found. No rebuttal cards. Pastor Marc editorial notes welcomed via Doctrine C drawer and inline editorial cards.
-
-Strongest editorial hooks for Pastor Marc:
-- **Hero — the dual Ps 22:1 / Matt 27:46 verse parallel.** The most powerful single-line opening on the site. Founder voice can frame what it means that Christ reached for David's words in his moment of death.
-- **§2.2 — "described before the method existed."** The Psalm 22 textual point about crucifixion not yet existing when David wrote *"they pierced my hands and my feet"* is the page's tightest argument. Founder voice can press the weight of it.
-- **§2.3 — Lord-Lord paradox.** Jesus silencing the Pharisees with a riddle from Psalm 110:1. Founder voice can dwell on what it means that the Messiah's deity was sitting in plain sight in the Psalter all along.
-- **§2.4 — Psalms 1 and 2 as the intentional opening.** Structural insight. Founder voice can frame how this changes the way a student reads the entire book.
-- **§2.5 — the Hallel.** Jesus sang Psalm 118 the night he was betrayed. The same psalm that had been sung *to* him on Sunday, he now sings *himself* on Thursday, knowing Friday is coming. The most haunting single moment in this brief. Strongest editorial ground on the page.
-
-## What's out of scope for this page
-
-- Full Psalter overview (all 150 psalms; that lives at the Psalms book hub when Wave 3 Batch 16 ships)
-- Psalm 23 as devotional / pastoral reading (not messianic in the strict sense; lives at its own verse/chapter pages)
-- The five-book structure of the Psalter (touched briefly in §2.4; full treatment lives at the Psalms book hub)
-- Hebrew poetry mechanics (parallelism, chiasm, acrostics) — lives at the Psalms book hub
-- Lament, Wisdom, Royal, Enthronement psalm categories — lives at the Psalms book hub
-- The Songs of Ascent (Pss 120–134) — separate cluster
-- The imprecatory psalms problem — out of scope
-- Davidic authorship debates — out of scope (assume traditional attribution)
-- The Septuagint vs Masoretic numbering (Ps 9/10, Ps 114/115) — depth 3 only if needed
-
-## Approval record
-
-- Depth 1: Option A — six-card grid showing the chronological arc of Christ's life through six psalms, with the Ps 22:1 / Matt 27:46 verse-parallel hero above
-- Featured psalms at depth 1: Pss 2, 118, 22, 69, 110, 45 (in life-arc order: incarnation/sonship → entry/cornerstone → crucifixion → passion details → priesthood/exaltation → eternal reign/wedding)
-- Full inventory at depth 2: 12 psalms (the 6 featured + Pss 8, 16, 40, 41, 72, 89 brief)
-- Psalm 22 spotlight: included as full depth-2 framework section (§2.2), centered on the "described before crucifixion existed" argument
-- Psalm 110 spotlight: included as full depth-2 framework section (§2.3), centered on the 25-NT-citations stat and Lord-Lord paradox
-- Psalms 1–2 introduction insight: included as short depth-2 framework card (§2.4)
-- Hallel/Passover spotlight: included as depth-2 framework card (§2.5) tracing Sunday-Thursday-Friday Psalm 118 arc
-- Tagline: Option B — "The book Jesus quoted on the cross."
-- Approved 2026-04-21 by Pastor Marc, prior to Batch C.2 execution
+*Brief authored 2026-04-23 as preemptive F3 measure. Six-psalm selection editorial per Christ's-life-arc organization; Spurgeon Treasury of David load-bearing PD source; tri-fold taxonomy applied per Vision §4.6; Ps 22:16 textual-critical note flagged as editorial priority. Pastor Marc reviews before paste.*
